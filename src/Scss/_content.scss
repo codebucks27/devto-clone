@@ -1,0 +1,66 @@
+.main-content {
+  header {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+
+    h1 {
+      font-size: 1.25rem;
+      flex: 1;
+    }
+    nav {
+      a {
+        margin: 0 0.5rem;
+        padding: 0.5rem;
+
+        border-radius: 5px;
+        &:hover {
+          background-color: rgba(#3b49df, 0.1);
+          color: var(--main-theme);
+        }
+
+        &:first-child {
+          border: none;
+          position: relative;
+
+          &:after {
+            content: "";
+            height: 3px;
+            background-color: var(--main-theme);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 5px;
+            margin: 0 0.5rem;
+            transition: all 0.2s;
+          }
+
+          &:hover:after {
+            margin: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+          }
+        }
+      }
+    }
+
+    select {
+      display: none;
+      padding: 0.5rem;
+
+      outline: none;
+      border-radius: 5px;
+
+      font-size: 1rem;
+      color: var(--font-color);
+      background-color: var(--main-0);
+
+      border: 1px solid var(--main-3);
+
+      &:focus {
+        box-shadow: 0px 0px 1px 1px var(--main-theme);
+      }
+    }
+  }
+}

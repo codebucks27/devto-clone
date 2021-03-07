@@ -1,0 +1,50 @@
+.card {
+  margin: 1rem 0;
+  background-color: var(--main-0);
+
+  border-radius: 5px;
+  line-height: 1.5;
+
+  height: max-content;
+
+  header {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+
+    h3 {
+      font-size: 1.25rem;
+      flex: 1;
+    }
+    small {
+      color: var(--main-theme);
+      font-size: 0.875rem;
+    }
+  }
+
+  li {
+    display: block;
+    padding: 1rem;
+    border-top: 1px solid var(--main-1);
+    border-bottom: 1px solid var(--main-1);
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      background-color: #fff;
+      color: var(--main-theme-darker);
+    }
+  }
+
+  small {
+    color: var(--main-6);
+  }
+
+  span {
+    background-color: var(--main-theme);
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 0.25rem;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,25 @@
+.rightBar {
+  display: flex;
+  flex-direction: column;
+
+  &__card-hackathon {
+    background-color: var(--main-0);
+    padding: 1rem;
+    border-radius: 5px;
+    line-height: 1.5;
+    height: max-content;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 100px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    p a {
+      color: var(--main-theme);
+    }
+  }
+}

@@ -1,0 +1,140 @@
+.article {
+  margin-top: 0.5rem;
+
+  background-color: #fff;
+  box-shadow: 0 0 0 1px var(--main-a);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+
+  &:not(:first-child) {
+    .article__image {
+      display: none;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 40%;
+    border-radius: 5px 5px 0 0;
+  }
+
+  &__details {
+    display: flex;
+    padding: 1rem;
+    position: relative;
+    .u-pic {
+      display: block;
+      width: 2rem;
+
+      img {
+        border-radius: 50%;
+        width: 100%;
+      }
+    }
+
+    .u-details {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0.5rem;
+
+      margin-bottom: 0.5rem;
+
+      .u-name,
+      .time {
+        font-size: 0.875rem;
+        color: var(--main-6);
+
+        &:hover {
+          color: var(--main-8);
+        }
+      }
+
+      h3,
+      .tags,
+      .additional-details {
+        margin-top: 1rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        &:hover {
+          color: var(--main-theme);
+        }
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        span {
+          font-size: 0.875rem;
+          padding: 0.2rem;
+          color: var(--main-6);
+
+          &:hover {
+            color: var(--font-color);
+          }
+        }
+      }
+
+      .additional-details {
+        font-size: 0.875rem;
+
+        display: flex;
+        align-items: center;
+
+        .reactions {
+          flex: 1;
+
+          a {
+            padding: 0.5rem 1rem;
+
+            color: var(--main-8);
+            border-radius: 5px;
+
+            &:first-child {
+              margin-left: -1rem;
+            }
+
+            &:hover {
+              color: var(--font-color);
+              background-color: rgba(0, 0, 0, 0.03);
+            }
+          }
+        }
+
+        .save {
+          position: absolute;
+          right: 0;
+          margin-left: 1rem;
+          padding-right: 1rem;
+
+          small {
+            color: var(--main-6);
+            margin-right: 0.5rem;
+          }
+
+          button {
+            padding: 0.3rem 0.8rem;
+            border-radius: 5px;
+            color: var(--main-6);
+            background-color: var(--main-2);
+            transition: all 0.2s;
+            &:hover {
+              color: var(--main-8);
+              background-color: var(--main-3);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.hidden,
+.show-mobile {
+  display: none;
+}

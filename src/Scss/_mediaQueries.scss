@@ -1,0 +1,69 @@
+@media only screen and (max-width: 1024px) {
+  .header {
+    padding: 1rem;
+  }
+  .main-container {
+    grid-template-columns: 2fr 5fr;
+    padding: 1rem;
+  }
+  .rightBar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 100%;
+    padding: 1rem;
+  }
+  .header .headerContainer {
+    &__hamburgerMenu {
+      display: block;
+    }
+
+    &__searchBox {
+      display: none;
+    }
+
+    &__right {
+      .hidden-search {
+        display: flex;
+      }
+      button {
+        display: none;
+      }
+    }
+  }
+
+  .leftBar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .main-content {
+    header {
+      nav {
+        display: none;
+      }
+      select {
+        display: block;
+      }
+    }
+  }
+  .hidden-mobile {
+    display: none;
+  }
+  .show-mobile {
+    display: inline-block;
+  }
+  .header .dropdown-menu {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 0.5rem;
+    ul li {
+      padding: 1rem;
+    }
+  }
+}

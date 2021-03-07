@@ -1,0 +1,152 @@
+.hidden {
+  display: none;
+}
+
+.leftBar {
+  .hidden {
+    display: none;
+  }
+
+  &__menu {
+    ul li a {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem;
+      color: var(--main-9);
+
+      i {
+        font-size: 1.25rem;
+        padding-right: 0.5rem;
+      }
+
+      &:hover {
+        background-color: var(--main-a);
+        color: var(--main-theme-darker);
+        border-radius: 5px;
+      }
+    }
+
+    .more {
+      font-size: 0.875rem;
+      a {
+        color: var(--main-7);
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    padding: 1rem;
+    margin-top: 1rem;
+    a {
+      font-size: 1.5rem;
+      color: var(--main-6);
+      margin: 0 0.5rem;
+
+      &:hover {
+        color: var(--main-9);
+      }
+    }
+  }
+
+  &__taglist {
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem;
+      padding-right: 0;
+
+      h3 {
+        font-size: 1rem;
+      }
+      i {
+        padding: 0.5rem;
+        margin-right: 1rem;
+        color: var(--main-6);
+        font-size: 1.5rem;
+        cursor: pointer;
+        border-radius: 5px;
+
+        &:hover {
+          color: var(--main-9);
+          background-color: var(--main-a);
+        }
+      }
+    }
+
+    ul {
+      height: 40vh;
+      overflow-y: auto;
+      margin-right: 0.75rem;
+      line-height: 1.6;
+
+      li {
+        padding: 0.5rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--main-a);
+          color: var(--main-theme-darker);
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+.hamburger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 500;
+
+  .hidden {
+    display: none;
+  }
+
+  &__content {
+    max-width: 300px;
+    width: 90%;
+    background-color: #fff;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+    position: relative;
+    header {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      border-bottom: 1px solid var(--main-2);
+
+      h2 {
+        font-size: 1.2rem;
+        flex: 1;
+      }
+
+      button {
+        border-radius: 50%;
+        font-size: 1.5rem;
+        cursor: pointer;
+
+        &:hover {
+          box-shadow: 0 0 0 5px rgba($color: #000000, $alpha: 0.05);
+          background-color: rgba($color: #000000, $alpha: 0.05);
+          color: var(--font-color);
+          z-index: 1;
+        }
+      }
+    }
+
+    &__items {
+      padding: 0.5rem;
+
+      ul li {
+        line-height: 1.6;
+      }
+    }
+  }
+}
