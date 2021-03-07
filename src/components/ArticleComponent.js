@@ -93,7 +93,7 @@ const ArticleComponent = (props) => {
                       <span className="hidden-mobile">comments</span>
                     </span>
                   ) : null}
-                  {comments_count == 0 ? (
+                  {comments_count === 0 ? (
                     <span>
                       <span className="show-mobile">{comments_count}</span>
                       &nbsp;

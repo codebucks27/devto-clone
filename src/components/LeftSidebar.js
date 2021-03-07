@@ -13,13 +13,8 @@ import {
   FcBusinessContact,
 } from "react-icons/fc";
 import { AiFillAudio } from "react-icons/ai";
-import { FaTags, FaDev, FaTag } from "react-icons/fa";
-import {
-  IoLogoTwitter,
-  IoLogoFacebook,
-  IoLogoGithub,
-  IoLogoInstagram,
-} from "react-icons/io";
+import { FaTags, FaDev } from "react-icons/fa";
+import { IoLogoTwitter, IoLogoFacebook, IoLogoGithub } from "react-icons/io";
 import { RiInstagramFill, RiTwitchLine } from "react-icons/ri";
 import { CgShapeHexagon } from "react-icons/cg";
 import { GrFormClose } from "react-icons/gr";
@@ -106,7 +101,7 @@ const LeftSidebar = (props) => {
 
             <li className={more ? "more hidden" : "more"}>
               <i></i>
-              <a href="#" onClick={toggle}>
+              <a href="/#" onClick={toggle}>
                 More...
               </a>
             </li>
@@ -219,7 +214,7 @@ const LeftSidebar = (props) => {
             {tags.map((tag, id) => {
               return (
                 <li key={id}>
-                  <a href="#">#{tag}</a>
+                  <a href="/#">#{tag}</a>
                 </li>
               );
             })}
@@ -292,7 +287,7 @@ const LeftSidebar = (props) => {
 
                   <li className={more ? "more hidden" : "more"}>
                     <i></i>
-                    <a href="#" onClick={toggle}>
+                    <a href="/#" onClick={toggle}>
                       More...
                     </a>
                   </li>

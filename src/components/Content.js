@@ -13,28 +13,28 @@ const Content = () => {
     }
   };
 
-  const handleScroll = () => {
-    const html = document.documentElement;
-    const body = document.body;
-    const windowheight =
-      "innerHeight" in window ? window.innerHeight : html.offsetHeight;
-
-    const docHeight = Math.max(
-      body.scrollHeight,
-      body.offsetHeight,
-      html.clientHeight,
-      html.scrollHeight,
-      html.offsetHeight
-    );
-
-    const windowBottom = windowheight + window.pageYOffset;
-    if (windowBottom >= docHeight) {
-      console.log("we reached the bottom");
-      fetchAgain();
-    }
-  };
-
   useEffect(() => {
+    const handleScroll = () => {
+      const html = document.documentElement;
+      const body = document.body;
+      const windowheight =
+        "innerHeight" in window ? window.innerHeight : html.offsetHeight;
+
+      const docHeight = Math.max(
+        body.scrollHeight,
+        body.offsetHeight,
+        html.clientHeight,
+        html.scrollHeight,
+        html.offsetHeight
+      );
+
+      const windowBottom = windowheight + window.pageYOffset;
+      if (windowBottom >= docHeight) {
+        console.log("we reached the bottom");
+        fetchAgain();
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
