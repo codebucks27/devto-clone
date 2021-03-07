@@ -5,15 +5,15 @@ import ArticleSkeleton from "./ArticleSkeleton";
 const Content = () => {
   const [articles, setArticles] = useState(null);
 
-  const fetchAgain = () => {
-    if (articles != null) {
-      fetch("https://dev.to/api/articles")
-        .then((res) => res.json())
-        .then((result) => setArticles([...articles, ...result]));
-    }
-  };
-
   useEffect(() => {
+    const fetchAgain = () => {
+      if (articles != null) {
+        fetch("https://dev.to/api/articles")
+          .then((res) => res.json())
+          .then((result) => setArticles([...articles, ...result]));
+      }
+    };
+
     const handleScroll = () => {
       const html = document.documentElement;
       const body = document.body;
