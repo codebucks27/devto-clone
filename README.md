@@ -11,9 +11,9 @@ https://www.youtube.com/channel/UCeYt6blRBKuNrEg_-282fSA/
 
 ### Detected Warnings at Production: 
 --> At hreff attribute of a link write /# instead of just #
-    in the content.js
+    in the content.js <br />
 --> Add handleScroll function inside useeffect where we're calling it else it will
-    show reach hook missing dependency
+    show reach hook missing dependency <br />
 --> Same goes for fetchAgain() function! 
 
 
