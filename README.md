@@ -9,6 +9,14 @@ If you want to learn how to create it please follow below tutorial:
 
 https://www.youtube.com/channel/UCeYt6blRBKuNrEg_-282fSA/
 
+### Detected Warnings at Production: 
+--> At hreff attribute of a link write /# instead of just #
+    in the content.js
+--> Add handleScroll function inside useeffect where we're calling it else it will
+    show reach hook missing dependency
+--> Same goes for fetchAgain() function! 
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
