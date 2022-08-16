@@ -3,17 +3,17 @@ import CardComponent from "./CardComponent";
 const listings = [
   {
     id: 1,
-    mainTitle: "Go/JS/PHP Software engineer looking for new opportunities",
-    subText: "forHire",
+    mainTitle: "SOC3 gives users the freedom to connect and interact with whomever they want.",
+    subText: "Highlight",
   },
   {
     id: 2,
-    mainTitle: "Live-Coding on YouTube continues tomorrow",
-    subText: "events",
+    mainTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    subText: "Events",
   },
   {
     id: 3,
-    mainTitle: "Product Designer",
+    mainTitle: "Web3 Dev Wanted!",
     subText: "jobs",
   },
   {
@@ -23,39 +23,39 @@ const listings = [
   },
   {
     id: 5,
-    mainTitle: "MEAN / MERN Stack 100+ Learning Resources {FREE}",
+    mainTitle: "Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
     subText: "misc",
   },
 ];
 const news = [
   {
     id: 1,
-    mainTitle: "Game Dev Digest — Issue #83 - How and Why",
+    mainTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. ",
 
     newarticle: true,
   },
   {
     id: 2,
-    mainTitle: "JavaScript News and Updates of February 2021",
+    mainTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. ",
 
     newarticle: true,
   },
   {
     id: 3,
-    mainTitle: "🗞 What's new and special in Create Go App CLI v1.7.0?",
+    mainTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. ",
 
     newarticle: true,
   },
   {
     id: 4,
     mainTitle:
-      "Google’s Termination of Dr. Mitchell, Clubhouse Security, Low-Code Tools, & more on DevNews!",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. ",
     subText: "1 comment",
     newarticle: false,
   },
   {
     id: 5,
-    mainTitle: "Ember 3.25 Released",
+    mainTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. ",
 
     newarticle: true,
   },
@@ -64,19 +64,19 @@ const news = [
 const help = [
   {
     id: 1,
-    mainTitle: "How to start a programming blog?",
+    mainTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
 
     newarticle: true,
   },
   {
     id: 2,
-    mainTitle: "How to use @yarnpkg/core?",
+    mainTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
     subText: "2 comments",
     newarticle: false,
   },
   {
     id: 3,
-    mainTitle: "Need advice regarding web development",
+    mainTitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
     subText: "5 comments",
 
     newarticle: false,
@@ -91,14 +91,13 @@ const RightSidebar = () => {
           <img src="https://picsum.photos/200/300" alt="" />
         </p>
         <h2>
-          <a href="/#">"Hack the Planet" with New Relic & DEV</a>
+          <a href="/#">Looking for a social app that isn't centralized and controlled by a single entity?</a>
         </h2>
 
         <p>
-          Use New Relic to build a climate-change observability app for the
-          chance to win up to $5,000!
+        Look no further than our decentralized social app! Soc3 gives users the freedom to connect and interact with whomever they want, without having to worry about censorship or data misuse.
           <strong>
-            <a href="/#">&nbsp;join the hackathon</a>
+            <a href="/#">&nbsp;Register Now!</a>
           </strong>
         </p>
       </div>

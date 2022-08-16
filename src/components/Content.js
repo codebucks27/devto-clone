@@ -8,7 +8,7 @@ const Content = () => {
   useEffect(() => {
     const fetchAgain = () => {
       if (articles != null) {
-        fetch("https://dev.to/api/articles")
+        fetch("http://twitter.com")
           .then((res) => res.json())
           .then((result) => setArticles([...articles, ...result]));
       }
@@ -42,7 +42,7 @@ const Content = () => {
 
   useEffect(() => {
     setTimeout(async () => {
-      const res = await fetch("https://dev.to/api/articles");
+      const res = await fetch("http://twitter.com");
       const data = await res.json();
 
       setArticles(data);
@@ -58,7 +58,7 @@ const Content = () => {
           <a href="/#">Feed</a>
           <a href="/#">Week</a>
           <a href="/#">Month</a>
-          <a href="/#">Infinity</a>
+          <a href="/#">All</a>
           <a href="/#">Latest</a>
         </nav>
         <select id="dropdown-select" className="dropdown">
@@ -69,7 +69,7 @@ const Content = () => {
           <option value="Week">Week</option>
           <option value="Month">Month</option>
           <option value="Year">Feed</option>
-          <option value="Infinity">Infinity</option>
+          <option value="Infinity">All</option>
         </select>
       </header>
       <div className="articles">

@@ -39,7 +39,7 @@ const ArticleComponent = (props) => {
           <img src={user.profile_image_90} alt="" />
         </div>
         <div className="u-details">
-          <a href={`http://dev.to/${user.username}`}>
+          <a href={`http://twitter/${user.username}`}>
             <span className="u-name">{user.username}</span>
           </a>
           <a href={url}>
@@ -59,7 +59,7 @@ const ArticleComponent = (props) => {
           <div className="tags">
             {tag_list.map((tag, id) => {
               return (
-                <a key={id} href={`https://dev.to/t/${tag}`}>
+                <a key={id} href={`http://twitter/t/${tag}`}>
                   <span className="tag">#{tag}</span>
                 </a>
               );

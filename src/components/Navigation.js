@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaDev } from "react-icons/fa";
+import { FaQuoteLeft } from "react-icons/fa";
 import { BiMessageRoundedCheck } from "react-icons/bi";
 import { RiNotificationLine } from "react-icons/ri";
 import { FiSearch } from "react-icons/fi";
@@ -18,8 +18,8 @@ const Navigation = (props) => {
           className="headerContainer__hamburgerMenu"
           onClick={() => props.openMenu()}
         ></div>
-        <a href="https://dev.to" className="headerContainer__logo">
-          <FaDev size="3.125rem" />
+        <a href="https://twitter.com/raldblox" className="headerContainer__logo">
+          <FaQuoteLeft size="3.125rem" />
         </a>
 
         <div className="headerContainer__searchBox">
@@ -50,8 +50,8 @@ const Navigation = (props) => {
         <ul>
           <li onClick={toggle}>
             <a href="/profile">
-              <div className="u-name">CodeBucks</div>
-              <small className="u-name-id">@codebucks</small>
+              <div className="u-name">RALDBLOX.ETH</div>
+              <small className="u-name-id">@raldblox</small>
             </a>
           </li>
 
@@ -59,7 +59,7 @@ const Navigation = (props) => {
             <a href="/dashboard">Dashboard</a>
           </li>
           <li onClick={toggle}>
-            <a href="/post">Writing a Post</a>
+            <a href="/post">Write a Post</a>
           </li>
           <li onClick={toggle}>
             <a href="/list">Reading list</a>
@@ -68,7 +68,7 @@ const Navigation = (props) => {
             <a href="/settings">Settings</a>
           </li>
           <li onClick={toggle}>
-            <a href="/signout">Signout</a>
+            <a href="/signout">Logout</a>
           </li>
         </ul>
       </div>

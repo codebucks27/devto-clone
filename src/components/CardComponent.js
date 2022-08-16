@@ -8,7 +8,7 @@ const CardComponent = (props) => {
         <h3>{tag}</h3>
         {tag === "Listings" && (
           <a href="/#">
-            <small>see all</small>
+            <small>See all</small>
           </a>
         )}
       </header>

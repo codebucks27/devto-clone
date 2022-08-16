@@ -20,22 +20,22 @@ import { CgShapeHexagon } from "react-icons/cg";
 import { GrFormClose } from "react-icons/gr";
 
 const tags = [
-  "react",
-  "graphql",
-  "nodejs",
-  "sass",
-  "javascript",
-  "html",
-  "css",
-  "webdev",
-  "opensource",
-  "beginners",
-  "python",
-  "git",
-  "vscode",
-  "npm",
-  "sql",
-  "ubuntu",
+  "web3",
+  "blockchain",
+  "nft",
+  "btc",
+  "ethereum",
+  "matic",
+  "ens",
+  "wagmi",
+  "doge",
+  "moon",
+  "lfg",
+  "gm",
+  "soc3",
+  "edu3",
+  "ai",
+  "ibm",
   "aws",
 ];
 
@@ -62,7 +62,7 @@ const LeftSidebar = (props) => {
                 <i>
                   <FcReading />
                 </i>
-                Reading List
+                Saved
               </a>
             </li>
             <li>
@@ -70,7 +70,7 @@ const LeftSidebar = (props) => {
                 <i>
                   <FcTodoList />
                 </i>
-                list
+                List
               </a>
             </li>
             <li>
@@ -112,7 +112,7 @@ const LeftSidebar = (props) => {
                   <i>
                     <FcAbout />
                   </i>
-                  Code of Conduct
+                  Roadmap
                 </a>
               </li>
               <li>
@@ -128,7 +128,7 @@ const LeftSidebar = (props) => {
                   <i>
                     <FcShop />
                   </i>
-                  DEV Shop
+                  Web3 Shop
                 </a>
               </li>
               <li>
@@ -136,7 +136,7 @@ const LeftSidebar = (props) => {
                   <i>
                     <FcLike />
                   </i>
-                  Sponsers
+                  Sponsors
                 </a>
               </li>
               <li>
@@ -169,7 +169,7 @@ const LeftSidebar = (props) => {
                   <i>
                     <FcBusinessContact />
                   </i>
-                  Contact
+                  Contact Us
                 </a>
               </li>
             </div>
@@ -205,7 +205,7 @@ const LeftSidebar = (props) => {
         </div>
         <nav className="leftBar__taglist">
           <header>
-            <h3>My Tags</h3>
+            <h3>Trending</h3>
             <i>
               <CgShapeHexagon />
             </i>
@@ -226,7 +226,7 @@ const LeftSidebar = (props) => {
         <div className="hamburger">
           <div className="hamburger__content">
             <header>
-              <h2>DEV Community</h2>
+              <h2>Web3 Community</h2>
               <button onClick={() => props.closeMenu()}>
                 <GrFormClose />
               </button>
