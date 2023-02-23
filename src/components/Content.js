@@ -46,7 +46,7 @@ const Content = () => {
       const data = await res.json();
 
       setArticles(data);
-      console.log(data);
+      // console.log(data);
     }, 2000);
   }, []);
 
