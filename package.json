@@ -2,29 +2,51 @@
   "name": "devto-clone",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
+  "packageManager": "bun@1.4.2",
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26",
+    "bun": "1.4.2"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.4.3",
-    "dayjs": "^1.10.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.2.0",
-    "react-scripts": "^5.0.1",
-    "sass": "^1.58.3",
-    "web-vitals": "^3.1.1"
+    "dayjs": "1.11.23",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-icons": "5.7.0",
+    "web-vitals": "6.2.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.7",
+    "@vitejs/plugin-react": "6.1.1",
+    "@vitest/eslint-plugin": "1.6.27",
+    "autoprefixer": "10.6.1",
+    "browserslist": "4.29.3",
+    "browserslist-to-esbuild": "2.1.1",
+    "eslint": "9.39.5",
+    "eslint-plugin-import": "2.32.0",
+    "eslint-plugin-jsx-a11y": "6.10.2",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "eslint-plugin-testing-library": "7.16.2",
+    "globals": "17.13.0",
+    "jsdom": "30.1.2",
+    "postcss": "8.5.28",
+    "sass": "1.105.1",
+    "vite": "8.3.2",
+    "vitest": "5.0.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "start": "vite",
+    "dev": "vite",
+    "build": "bun run lint && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint . --max-warnings 0"
   },
   "browserslist": {
     "production": [
