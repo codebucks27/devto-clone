@@ -86,3 +86,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Changes
+
+Migrated CRA to Vite 8, React 19, Vitest 5, and Bun 1.4.2 (`bun.lock`); upgraded dependencies, JSX extensions, Sass modules, and Web Vitals (`on*`/INP). ESLint 9.39.5 is retained despite npm deprecation and EOL (2026-08-06) because stable React, accessibility, and import plugins exclude ESLint 10. Original browser targets and CSS autoprefixing remain.
+
+Use a Node version supported by `package.json`, then `bun install --frozen-lockfile`. Commands: `bun run dev`/`bun run start`, `bun run lint`, `bun run test` (once), `bun run test:watch`, `bun run build`, and `bun run preview`. Dev/preview default to port 3000; builds still output `build/`. CRA commands above remain historical; `eject` is removed.
+
+Vite loads mode-specific `.env` files; shell values win and Bun preloading is disabled. Client variables use `REACT_APP_*` or `VITE_*`, plus explicit `NODE_ENV`/`PUBLIC_URL`. Legacy `process.env.PUBLIC_URL` and `%PUBLIC_URL%` work. Set `PUBLIC_URL=/subpath`, an absolute URL, or `.` for non-root builds.

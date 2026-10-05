@@ -1,0 +1,2 @@
+# Let Vite load the appropriate mode-specific .env files.
+env = false
